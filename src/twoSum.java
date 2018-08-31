@@ -5,6 +5,7 @@ public class twoSum {
         System.out.println(Arrays.toString(test.twoSum(new int[]{1,2,7,9},9)));
         System.out.println(Arrays.toString(test.twoSumv2(new int[]{1,2,7,9},9)));
     }
+
     // Approach 1: one-pass HashMap
     /* While we iterate elements in the array, we look back whether current element's complement exists.
        Use a hashmap to help.
