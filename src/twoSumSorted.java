@@ -9,7 +9,7 @@ public class twoSumSorted {
     }
 
     // Approach 1: two pointers
-    /* Sort array first. Then use two pointers.
+    /* use two pointers.
        Time complexity: O(n)
        Space complexity: O(1)
     * */
