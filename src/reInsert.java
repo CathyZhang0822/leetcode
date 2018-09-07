@@ -1,3 +1,9 @@
+/* google oa practice
+给一个IP address，里面有很多character和slashes， 给一个 integer值 K
+重新insert slashes进IP address，是得其从后往前每隔K个字符都有一个'-'
+每个'-'前面至少有一个字符
+ex: "78-90-LUMLN"  -> "7-890L-UMLN"
+* */
 public class reInsert {
     // google oa practice
     public static void main(String[] args){
