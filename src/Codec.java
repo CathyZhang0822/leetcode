@@ -37,7 +37,7 @@ public class Codec {
     }
 
     //思路使用一个queue，serialize the tree level by level
-    private String serialize2(TreeNode root){
+    public String serialize2(TreeNode root){
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         StringBuilder sb = new StringBuilder();
