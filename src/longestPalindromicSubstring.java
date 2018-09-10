@@ -4,6 +4,7 @@ public class longestPalindromicSubstring {
     public static void main(String[] args){
         String s = "cbbdbb";
         System.out.println(lPS(s));
+        System.out.println(lPSExpand(s));
     }
 /* Approach 1: DP
    define DP[i][j] = true if s.substring(i,j) is palindrom
@@ -35,8 +36,23 @@ public class longestPalindromicSubstring {
     }
 
     public static String lPSExpand(String s){
-        String res = "";
+        int[] res = new int[2];
+        for(int i=0; i < s.length(); i++){
+            expand(s, i, i, res);
+            expand(s, i, i+1, res);
+        }
+        return s.substring(res[0], res[0]+res[1]);
+    }
 
-        return res;
+    private static void expand(String s, int i, int j, int[] res){
+        while(i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)){
+            i --;
+            j ++;
+        }
+        // int[0]: starting index  int[1]: length of substring
+        if(j - i - 1 > res[1]){
+            res[0] = i+1;
+            res[1] = j-i-1;
+        }
     }
 }
