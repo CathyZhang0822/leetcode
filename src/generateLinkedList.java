@@ -15,4 +15,14 @@ public class generateLinkedList {
         }
         return Dummy.next;
     }
+
+    public String show(ListNode head){
+        StringBuilder sb = new StringBuilder();
+        while(head!=null){
+            sb.append(" -> " + head.val);
+            head = head.next;
+        }
+        System.out.println(sb.toString());
+        return sb.toString();
+    }
 }

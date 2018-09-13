@@ -60,11 +60,17 @@ Just want to push myself to practice coding
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Java](./src/longestIncreasingSubsequence.java) | O(N^2)思路|
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | [Java](./src/longestValidParentheses.java) | O(N)思路|
 | | **Linked List** | | |
+| lc外 | Generate Linked List| [Java](./src/generateLinkedList.java)| 自己写的class用来快速构建linked list 1.generate 2. show|
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./src/reverseLinkedList.java) |经典题目 关键在于next指向previous node同时，不能丢掉后面linked list的头 <br> 1. iterative method 2. recursive method |
+| 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Java](./src/reverseLinkedListII.java) | 慢慢深入到写出来大致分了三步：<br> 1.完全理解从头到尾 reverse linked list <br> 2.从头到第N个 reverse <br> 3.从第M个到第N个 reverse|
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Java](./src/middleofll.java) |快慢指针|
-| 237 | [Delete Node in a linked list](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Java](./src/deleteNode.java) | |
-| 21 | [Merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Java](./src/merge2ll.java) | |
+| 237 | [Delete Node in a linked list](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Java](./src/deleteNode.java) | 这道题很有意思，只给了要删除node的reference|
+| 83 | [Remove duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Java](./src/removeDuplicates.java) |1.return a new linked list <br> 2. operate **in place** 3. recursive method|
+| 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Java](./src/removeElements.java) |1.return a new linked list <br> 2. operate **in place** <br> 最大的感受是，假如remove个多个重复元素，可以一个一个remove（`head.next = head.next.next;`），不需要一下就找到头 |
+| 21 | [Merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Java](./src/merge2ll.java) | 分清什么时候把L1放进去，什么时候把L2放进去|
 | 23 | [Merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Java](./src/mergeKll.java) | |
-| 141 | [Linked List Circle](https://leetcode.com/problems/linked-list-cycle/) | [Java](./src/linkedlistcircle.java) | |
+| 141 | [Linked List Circle](https://leetcode.com/problems/linked-list-cycle/) | [Java](./src/linkedlistcircle.java) | 1. 老生常谈的slow/fast pointers <br> 2 hastset方法，store visited nodes' reference into a set. 我觉得非常straightforward|
+| 142 | [Linked List Circle ii](https://leetcode.com/problems/linked-list-cycle-ii/) | [Java](./src/linkedlistcircle.java) | 对于上一道题，返回环开始的地方。用slow/fast pointers方法就需要数学证明了|
+| 801 | [Linked List Connected Components](https://leetcode.com/problems/linked-list-components/) | [Java](./src/connectedComponents.java)|自己的直观solution：一个hashset, 一个boolean值 |
 
 
