@@ -63,14 +63,25 @@ Just want to push myself to practice coding
 | lc外 | Generate Linked List| [Java](./src/generateLinkedList.java)| 自己写的class用来快速构建linked list 1.generate 2. show|
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./src/reverseLinkedList.java) |经典题目 关键在于next指向previous node同时，不能丢掉后面linked list的头 <br> 1. iterative method 2. recursive method |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Java](./src/reverseLinkedListII.java) | 慢慢深入到写出来大致分了三步：<br> 1.完全理解从头到尾 reverse linked list <br> 2.从头到第N个 reverse <br> 3.从第M个到第N个 reverse|
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Java](./src/reverseLinkedListII.java) | 这道题有很多种解法来做：<br> 1.把92作为helper function，把swap two nodes 看成reverse nodes in 2 group <br> 2.自己比较straightforward的解法 <br> 3.recursive|
+| 25 | [Reverse Nodes in K Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Java](./src/reverseLinkedListII.java) | 1. 把92作为helper function 2.recursive方法|
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Java](./src/middleofll.java) |快慢指针|
-| 237 | [Delete Node in a linked list](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Java](./src/deleteNode.java) | 这道题很有意思，只给了要删除node的reference|
+| 237 | [Delete Node in a linked list](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Java](./src/deleteNode.java) | 这道题很有意思，只给了要删除node的reference. (面试的时候最好问清)|
 | 83 | [Remove duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Java](./src/removeDuplicates.java) |1.return a new linked list <br> 2. operate **in place** 3. recursive method|
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Java](./src/removeElements.java) |1.return a new linked list <br> 2. operate **in place** <br> 最大的感受是，假如remove个多个重复元素，可以一个一个remove（`head.next = head.next.next;`），不需要一下就找到头 |
 | 21 | [Merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Java](./src/merge2ll.java) | 分清什么时候把L1放进去，什么时候把L2放进去|
-| 23 | [Merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Java](./src/mergeKll.java) | |
+| 23 | [Merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Java](./src/mergeKll.java) |1. priority queue, compare head of each linked list T:N*LOGK S:K <br> 2. divide and conquer(with merge 2 linked lists) |
+| 143 | [**Reorder List**](https://leetcode.com/problems/reorder-list/) | [Java](./src/reorder.java) | **三道经典例题的结合** 1. find the middle of the linked list <br> 2. reverse the second part <br> 3. merge in-place|
+| 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Java](./src/oddEven.java) |split it into two linked lists then connect them。注意先对ODD操作。|
 | 141 | [Linked List Circle](https://leetcode.com/problems/linked-list-cycle/) | [Java](./src/linkedlistcircle.java) | 1. 老生常谈的slow/fast pointers <br> 2 hastset方法，store visited nodes' reference into a set. 我觉得非常straightforward|
 | 142 | [Linked List Circle ii](https://leetcode.com/problems/linked-list-cycle-ii/) | [Java](./src/linkedlistcircle.java) | 对于上一道题，返回环开始的地方。用slow/fast pointers方法就需要数学证明了|
 | 801 | [Linked List Connected Components](https://leetcode.com/problems/linked-list-components/) | [Java](./src/connectedComponents.java)|自己的直观solution：一个hashset, 一个boolean值 |
+| 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Java](./src/rotateList.java) | 1. Get the length 2. move to the (length - n%length) node 3. do the rotation|
+| 86 | [Partition List](https://leetcode.com/problems/partition-list/) | [Java](./src/partitionList.java) |iterate 两遍，非常strightforward |
+| 138 | [**Copy List with Random Pointer**](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Java](./src/copyListWithRandom.java) | |
+| | **Math** | |
+| 7 |[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Java](./src/reverseInteger.java) |**这道题的关键是处理overflow的问题**<br>`Integer.MAX_VALUE:2147483647` <br> `Integer.MIN_VALUE:-2147483648` <br> 1.Pop and Push Digits & Check before Overflow <br>2. 作弊方法catch exception|
+| 9 |[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Java](./src/palindromNum.java) |1. contert to string 2. **重点掌握** 思路有些像上面的reverse integer，但是只用reverse 一半，有效防止over flow|
+| 50 |[Pow(x,n)](https://leetcode.com/problems/powx-n/) | [Java](./src/pow.java) |recursive method: T(logn) S(logn) 1. n < 0 <br> 2. n == 0 <br> 3. n % 2 == 0 <br> 4. n % 2 == 1 |
 
 

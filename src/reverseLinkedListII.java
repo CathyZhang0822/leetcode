@@ -1,9 +1,14 @@
 public class reverseLinkedListII {
     public static void main(String[] args){
         generateLinkedList obj = new generateLinkedList();
-        ListNode head = obj.generate(new int[]{0,1,2,3,4,5});
-        obj.show(reverseBetween(head, 2,8));
-
+        ListNode head = obj.generate(new int[]{1,2,3});
+        //ListNode head1 = reverseBetween(head, 1,2);
+        //ListNode head2 = reverseBetween(head1,3,4);
+        //obj.show(head1);
+        //System.out.println(head1.val);
+        //obj.show(head2);
+        //obj.show(swapPaires(head));
+        obj.show(reverseKGroup(head, 2));
     }
     // 这是92 那道题
     public static ListNode reverseBetween(ListNode head, int m, int n){
@@ -22,7 +27,7 @@ public class reverseLinkedListII {
         }
         ListNode firstPartTail = move;
         move = move.next;
-        System.out.println(firstPartTail.val);
+        //System.out.println(firstPartTail.val);
         ListNode pre = null;
         ListNode cur = move;
         ListNode next;
@@ -40,5 +45,48 @@ public class reverseLinkedListII {
         move.next = cur;
         firstPartTail.next = pre;
         return dummy.next;
+    }
+    /* 做完上面那道题之后，感觉可以把 reverse m to n 当作 helper function
+       就是每两个两个的reverse 0-1 2-3 4-5 这样
+       24 swap nodes in pairs
+    * */
+    public static ListNode swapPaires(ListNode head){
+        generateLinkedList obj = new generateLinkedList();
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode move = head;
+        int index = 0;
+        while(move != null){
+            index ++;
+            move = move.next;
+        }
+        move = head;
+        for(int i = 1; i < index; i=i+2){
+            move = reverseBetween(move ,i,i+1);
+            obj.show(move);
+        }
+        // 好好想想dummy的情况
+        System.out.println("dummy:");
+        obj.show(dummy);
+        return move;
+    }
+    /* 同样的思路可以解决25
+    * */
+    public static ListNode reverseKGroup(ListNode head, int k){
+        generateLinkedList obj = new generateLinkedList();
+
+        ListNode move = head;
+        int index = 0;
+        while(move != null){
+            index ++;
+            move = move.next;
+        }
+        move = head;
+        for(int i = 1; i+k-1 <= index; i=i+k){
+            move = reverseBetween(move ,i,i+k-1);
+            obj.show(move);
+        }
+        // 好好想想dummy的情况
+        return move;
     }
 }
