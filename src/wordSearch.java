@@ -26,7 +26,7 @@ public class wordSearch {
         if(level == word.length()){
             return true;
         }
-        if(m < 0 || m >= board.length || n < 0 || n >= board[0].length || board[m][n] != word.charAt(level)){
+        if(m < 0 || m >= board.length || n < 0 || n >= board[0].length || visited[m][n]||board[m][n] != word.charAt(level)){
             return false;
         }
         visited[m][n] = true;
