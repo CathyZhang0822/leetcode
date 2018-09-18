@@ -85,6 +85,7 @@ Just want to push myself to practice coding
 | 801 | [Linked List Connected Components](https://leetcode.com/problems/linked-list-components/) | [Java](./src/connectedComponents.java)|自己的直观solution：一个hashset, 一个boolean值 |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Java](./src/rotateList.java) | 1. Get the length 2. move to the (length - n%length) node 3. do the rotation|
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | [Java](./src/partitionList.java) |iterate 两遍，非常strightforward |
+| 117 | [Populating Next Right Pointers in Each Node I,II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [Java](./src/populateNextPointer.java) |1. 如果没有space要求，用一个queue BFS就行 <br> 2. O(1) space. Make use of next pointer |
 | 138 | [**Copy List with Random Pointer**](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Java](./src/copyListWithRandom.java) | |
 | | **Math** | |
 | 7 |[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Java](./src/reverseInteger.java) |**这道题的关键是处理overflow的问题**<br>`Integer.MAX_VALUE:2147483647` <br> `Integer.MIN_VALUE:-2147483648` <br> 1.Pop and Push Digits & Check before Overflow <br>2. 作弊方法catch exception|
@@ -95,5 +96,7 @@ Just want to push myself to practice coding
 | | **Stack**| |
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Java](./src/removeKDigits.java) |**非常好的一道题**从straightforward solution到optimized solution(USE A STACK) <br> **思考** 如果是remove k digits 边最大呢？|
+| | **一些神奇的算法**| |
+| 287 |[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [Java](./src/findDup.java) |这道题一开始就有很多constraints,但是我觉得面试中不可能一开始就有这么多constrains <br> 1. instinct method: use hashmap <br> 2.（虽然modify了array）因为n+1 长度，但是数字只在1-n之间，用swap把它们放到了对应的位置上 3. 很精妙的binary search算法 （但是判断语句跟平常不太一样）|
 
 
