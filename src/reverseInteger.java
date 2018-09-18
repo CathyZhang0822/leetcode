@@ -19,10 +19,10 @@ public class reverseInteger {
         int res = 0;
         while(x != 0){
             int tail = x % 10;
-            if(res > Integer.MAX_VALUE/10 || (res == Integer.MAX_VALUE && tail > 7)){
+            if(res > Integer.MAX_VALUE/10 || (res == Integer.MAX_VALUE/10 && tail > 7)){
                 return 0;
             }
-            if(res < Integer.MIN_VALUE/10 || (res == Integer.MIN_VALUE && tail < -8)){
+            if(res < Integer.MIN_VALUE/10 || (res == Integer.MIN_VALUE/10 && tail < -8)){
                 return 0;
             }
             /* 不能在这一步时直接跟 MIN/MAX比较，因为已经over flow了
