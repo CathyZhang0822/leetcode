@@ -98,5 +98,8 @@ Just want to push myself to practice coding
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Java](./src/removeKDigits.java) |**非常好的一道题**从straightforward solution到optimized solution(USE A STACK) <br> **思考** 如果是remove k digits 边最大呢？|
 | | **一些神奇的算法**| |
 | 287 |[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [Java](./src/findDup.java) |这道题一开始就有很多constraints,但是我觉得面试中不可能一开始就有这么多constrains <br> 1. instinct method: use hashmap <br> 2.（虽然modify了array）因为n+1 长度，但是数字只在1-n之间，用swap把它们放到了对应的位置上 3. 很精妙的binary search算法 （但是判断语句跟平常不太一样）|
-
+| | **一些OA** | |
+| G |Group Email |[Java](./src/groupEmail.java) | 简单字符串处理 |
+| L |Shift String |[Java](./src/linkedinoa.java) |三步翻转法|
+| L |Max Different |[Java](./src/linkedinoa2.java)| |
 
