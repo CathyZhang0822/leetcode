@@ -16,6 +16,7 @@ Just want to push myself to practice coding
 | 340 | [Longest Substring with At Most k Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [Java](./src/longestSubstringKDisctince.java) | two pointers, sliding window algorighm | 
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Java](./src/anagramsInString.java) | 1. sliding window 固定窗口，比较两格hashmap -> 比较两个array -> 维护一个array <br> 2. two pointers + sliding window 活动窗口 |
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [Java](./src/permutationInString.java) | sliding window 固定窗口，比较两格hashmap -> 比较两个array -> 维护一个array|
+| 395 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | | |
 | | **binary search** | | |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | [Java](./src/firstBadVersion.java) | Binary Search Time: O(logN) Space: O(1)|
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Java](./src/searchInsertPosition.java) | Binary Search, 注意边界条件 |
@@ -46,13 +47,17 @@ Just want to push myself to practice coding
 | 139 | [Word Break](https://leetcode.com/problems/word-break/) | [Java](./src/wordBreak.java) |memorized dfs：如果直接用DFS的话，时间复杂度：O(N!)。因为很多相同的substring算了很多遍。用map记录下distinct substring的解->O(N^2)。因为用n*(n-1)/2个substring|
 | 140 | [Word Break II](https://leetcode.com/problems/word-break-ii/) | [Java](./src/wordBreakII.java) |1. true or false: boolean DP[] 2.all paths: LinkedList<String> [] DP, 每个value是一个list of string| 
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
+| | **BFS**| |
+| 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) |[Java](./src/snakeAndLadders.java) |经典BFS,求最短路径。别忘了用visited防止TLE |
 | | **tree** | | |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./src/Codec.java) |我把它写在了tree的第一个是因为之后都要用它来构建tree了。总结了两种方法，熟练掌握。<br>1. use queue to traverse/construct the tree level by level <br> 2. recursively pre-order traverse/construct the tree |
+| 449 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/) |[Java](./src/CodecBST.java)| 1. preorder traverse. Take advantage of BST, 不需要全局变量，就可以判断string里面哪边是左树，哪边是右树 <br> 2. use a queue, level order traverse |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./src/inorder.java) |方法1：recursively inorder traverse the tree into a list. T:O(n) S:O(h) <br>方法2：iteratively inorder traverse the tree, use a stack(在stack pop的时候值放进res里面) T:O(n) S:O(n)|
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./src/preorder.java) | 这里只写了iterative：iteratively preorder traverse the tree, use a stack(在push node into stack的时候, add val into res) T:O(n) S:O(n)|
 | 98 | [Valid Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Java](./src/validBST.java) |1:recursively inorder traverse the tree into a list. T:O(n) S:O(n)<br> 2.iteratively inorder traverse the tree using a stack. T:O(n) S:O(n) <br> 3.recursively inorder traverse the tree using two boundary values: min, max T:O(n) S:O(1) <br>考虑integer overflow：long pre = Long.MIN_VALUE; |
 | 623 | [Add One Row To Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Java](./src/add1Row.java) | 一道经典BFS的题，注意corner case |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Java](./src/deleteNodeInBST.java) |1. search for a node to remove <br> 2. If the node is found, delete the node <br>|
+| 109 | [Convert Sorted List into Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[Java](./src/lltoBST.java)|Divide and Conquer |
 | | **DP, Palindrome(Substring, Subsequence..)**| | |
 | LC外 | [Longest Common Substring](https://en.wikipedia.org/wiki/Longest_common_substring_problem) | [Java](./src/longestCommonSubstring.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 |
 | LC外 | [Longest Common Subsequence](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) | [Java](./src/longestCommonSubsequence.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 <br> if(s(i)!=t(j)): DP(i)(j) = Math.mDP(i-1)(j-1)|
@@ -82,6 +87,7 @@ Just want to push myself to practice coding
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Java](./src/oddEven.java) |split it into two linked lists then connect them。注意先对ODD操作。|
 | 141 | [Linked List Circle](https://leetcode.com/problems/linked-list-cycle/) | [Java](./src/linkedlistcircle.java) | 1. 老生常谈的slow/fast pointers <br> 2 hastset方法，store visited nodes' reference into a set. 我觉得非常straightforward|
 | 142 | [Linked List Circle ii](https://leetcode.com/problems/linked-list-cycle-ii/) | [Java](./src/linkedlistcircle.java) | 对于上一道题，返回环开始的地方。用slow/fast pointers方法就需要数学证明了|
+| 708 | [Insert into a Cyclic Sorted List](https://leetcode.com/problems/insert-into-a-cyclic-sorted-list/) |[Java](./src/insertIntoCyclic.java)| do...while loop, pay attention to corner cases: <br>1. in the middle <br>2. between head and tail <br>3. duplicates |
 | 801 | [Linked List Connected Components](https://leetcode.com/problems/linked-list-components/) | [Java](./src/connectedComponents.java)|自己的直观solution：一个hashset, 一个boolean值 |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Java](./src/rotateList.java) | 1. Get the length 2. move to the (length - n%length) node 3. do the rotation|
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | [Java](./src/partitionList.java) |iterate 两遍，非常strightforward |
@@ -93,13 +99,16 @@ Just want to push myself to practice coding
 | 50 |[Pow(x,n)](https://leetcode.com/problems/powx-n/) | [Java](./src/pow.java) |recursive method: T(logn) S(logn) 1. n < 0 <br> 2. n == 0 <br> 3. n % 2 == 0 <br> 4. n % 2 == 1 |
 | | **Heap (Top K 问题 quick select, treeset)** | |
 | 346 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)| [Java](./src/topkFrequentElements.java) |1. use PriorityQueue Time: n + k*log(n) <br> 2.bucket sort T:O(n) List<Integer>[] bucket = new **List**[nums.length+1]; |
-| | **Stack**| |
+| | **Stack,Queue**| |
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Java](./src/removeKDigits.java) |**非常好的一道题**从straightforward solution到optimized solution(USE A STACK) <br> **思考** 如果是remove k digits 边最大呢？|
+| | **Design**| |
+| 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | | **一些神奇的算法**| |
 | 287 |[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [Java](./src/findDup.java) |这道题一开始就有很多constraints,但是我觉得面试中不可能一开始就有这么多constrains <br> 1. instinct method: use hashmap <br> 2.（虽然modify了array）因为n+1 长度，但是数字只在1-n之间，用swap把它们放到了对应的位置上 3. 很精妙的binary search算法 （但是判断语句跟平常不太一样）|
 | | **一些OA** | |
 | G |Group Email |[Java](./src/groupEmail.java) | 简单字符串处理 |
-| L |Shift String |[Java](./src/linkedinoa.java) |三步翻转法|
-| L |Max Different |[Java](./src/linkedinoa2.java)| |
+| L |Shift String |[Java](./src/linkedinoa.java) | 三步翻转法 |
+| L |Max Different |[Java](./src/linkedinoa2.java)| 挺简单的，我好像用了个PQ |
+| L |Can U Sort| [Java](./src/canUSort.java) | bucket sort |
 
