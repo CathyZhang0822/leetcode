@@ -1,10 +1,13 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class test {
     public static void main(String[] args){
         int[] A = {2, 2, 4, 7, 8};
         //System.out.println(smallestRangeI(A, 3));
-        System.out.println(smallestRangeII(A, 5));
+        //System.out.println(smallestRangeII(A, 5));
+        String cur = "123";
+        System.out.println(cur.substring(0,1) + cur.substring(2,3));
+        List<Integer> res = Arrays.asList(1,2);
     }
     public  static int smallestRangeI(int[] A, int K) {
         int min = Integer.MAX_VALUE;
