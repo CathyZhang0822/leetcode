@@ -121,4 +121,5 @@ Just want to push myself to practice coding
 | L |Shift String |[Java](./src/linkedinoa.java) | 三步翻转法 |
 | L |Max Different |[Java](./src/linkedinoa2.java)| 挺简单的，我好像用了个PQ |
 | L |Can U Sort| [Java](./src/canUSort.java) | bucket sort |
+| 百度 | 有多少不上升/不下降序列  |[Java](./src/baiduoa.java) | dfs -> memorized dfs -> 感觉DP可以做还没想出来 |
 
