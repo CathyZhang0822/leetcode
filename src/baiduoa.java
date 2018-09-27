@@ -7,7 +7,7 @@ public class baiduoa {
     static Map<String, Integer> map = new HashMap<>();
     public static void main(String[] args){
         res = 0;
-        int n = 2;
+        int n = 3;
         int[] nums = new int[n];
         for(int i=0; i < n; i++){
             nums[i] = i+1;
@@ -39,4 +39,5 @@ public class baiduoa {
         }
         return sum;
     }
+
 }
