@@ -49,6 +49,7 @@ Just want to push myself to practice coding
 | 139 | [Word Break](https://leetcode.com/problems/word-break/) | [Java](./src/wordBreak.java) |memorized dfs：如果直接用DFS的话，时间复杂度：O(N!)。因为很多相同的substring算了很多遍。用map记录下distinct substring的解->O(N^2)。因为用n*(n-1)/2个substring|
 | 140 | [Word Break II](https://leetcode.com/problems/word-break-ii/) | [Java](./src/wordBreakII.java) |1. true or false: boolean DP[] 2.all paths: LinkedList<String> [] DP, 每个value是一个list of string| 
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
+| LC外|[FangFang goes home]() |[Java](./src/pathToHome.java) | 自己出着玩的题目|
 | | **BFS**| |
 | 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) |[Java](./src/snakeAndLadders.java) |经典BFS,求最短路径。别忘了用visited防止TLE |
 | | **tree** | | |

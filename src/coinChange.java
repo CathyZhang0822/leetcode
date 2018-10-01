@@ -2,7 +2,7 @@ import java.util.*;
 public class coinChange {
     public static void main(String[] args){
         int[] coins = new int[] {1,2,5};
-        int amount = 5;
+        int amount = 928;
         System.out.println(coinChangeFewest(coins, amount));
         System.out.println(coinChangeAll(coins, amount));
     }
