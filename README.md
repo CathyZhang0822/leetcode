@@ -49,7 +49,7 @@ Just want to push myself to practice coding
 | 139 | [Word Break](https://leetcode.com/problems/word-break/) | [Java](./src/wordBreak.java) |memorized dfs：如果直接用DFS的话，时间复杂度：O(N!)。因为很多相同的substring算了很多遍。用map记录下distinct substring的解->O(N^2)。因为用n*(n-1)/2个substring|
 | 140 | [Word Break II](https://leetcode.com/problems/word-break-ii/) | [Java](./src/wordBreakII.java) |1. true or false: boolean DP[] 2.all paths: LinkedList<String> [] DP, 每个value是一个list of string| 
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
-| LC外|[FangFang goes home]() |[Java](./src/pathToHome.java) | 自己出着玩的题目|
+| LC外|[FangFang goes home]() |[Java](./src/pathToHome.java) | 自己出着玩的题目. 一个棋盘，从左上角到右下角一共：C(m+n, m) 或 C(m+n, n)种|
 | | **BFS**| |
 | 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) |[Java](./src/snakeAndLadders.java) |经典BFS,求最短路径。别忘了用visited防止TLE |
 | | **tree** | | |
@@ -107,7 +107,7 @@ Just want to push myself to practice coding
 | | **Heap (Top K 问题 quick select, treeset)** | |
 | 346 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)| [Java](./src/topkFrequentElements.java) |1. use PriorityQueue Time: n + k*log(n) <br> 2.bucket sort T:O(n) List<Integer>[] bucket = new **List**[nums.length+1]; |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Java](./src/kthLargest.java) | **Quick Select** (注意partition function里面用two pointers swap的模版)|
-| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | | |
+| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |[Java](./src/findMedian.java) | two heaps: minheap to store the larger part, maxheap to store the smaller part|
 | | **Stack,Queue**| |
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Java](./src/removeKDigits.java) |**非常好的一道题**从straightforward solution到optimized solution(USE A STACK) <br> **思考** 如果是remove k digits 边最大呢？|
@@ -116,7 +116,7 @@ Just want to push myself to practice coding
 | 886 | [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|[Java](./src/bipartition.java) | 同是bipartite graph问题.不过这个我们需要自己建造一个graph. |
 | | **Trie** | |
 | 208 | [Implement Trie(Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Java](./src/Trie.java)| Trie 相关题目的基础，需要知道它是如何实现的 |
-| 211 | [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | | |
+| 211 | [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/) |[Java](./src/WordDictionary.java)| 一道经典的trie与dfs结合的题|
 | | **Design**| |
 | 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | | **一些神奇的算法**| |
