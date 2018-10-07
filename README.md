@@ -117,6 +117,9 @@ Just want to push myself to practice coding
 | | **Trie** | |
 | 208 | [Implement Trie(Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Java](./src/Trie.java)| Trie 相关题目的基础，需要知道它是如何实现的 |
 | 211 | [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/) |[Java](./src/WordDictionary.java)| 一道经典的trie与dfs结合的题|
+| 676 | [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/) |[Java](./src/magicDictionary.java)|1. 用trie做，找到第一个不同的char，看char之后的substring 能否在当前的子树里面找到。<br> 2. 非常巧妙的hashmap做法 <childstring: [index, char]>|
+| 720 | [Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/) |[Java](./src/longestWord.java) |1.很tricy的sort方法 2. trie + dfs (Build a trie in the normal way, then do a dfs to find the longest continuous downward path from the root.)|
+| 642 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Java](./src/AutocompleteSystem.java) |相对于normal trienode，加了一个set<string> strings. 表示有多少string的prefix是当前prefix.最关键的一点是：每insert一个word,就在经过的node加上这个word | 
 | | **Design**| |
 | 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | | **一些神奇的算法**| |
