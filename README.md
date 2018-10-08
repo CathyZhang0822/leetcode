@@ -120,6 +120,9 @@ Just want to push myself to practice coding
 | 676 | [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/) |[Java](./src/magicDictionary.java)|1. 用trie做，找到第一个不同的char，看char之后的substring 能否在当前的子树里面找到。<br> 2. 非常巧妙的hashmap做法 <childstring: [index, char]>|
 | 720 | [Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/) |[Java](./src/longestWord.java) |1.很tricy的sort方法 2. trie + dfs (Build a trie in the normal way, then do a dfs to find the longest continuous downward path from the root.)|
 | 642 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Java](./src/AutocompleteSystem.java) |相对于normal trienode，加了一个set<string> strings. 表示有多少string的prefix是当前prefix.最关键的一点是：每insert一个word,就在经过的node加上这个word | 
+| 648 | [Replace Words](https://leetcode.com/problems/replace-words/) | [Java](./src/replaceWords.java)| 一道很直观的trie的题目，对于每个word,找包含的最短的prefix|
+| 677 | [Map Sum](https://leetcode.com/problems/map-sum-pairs/) |[Java](./src/MapSum.java)|还是那关键的一步：相对于normal trienode，加了一个set<string> strings. 表示有多少string的prefix是当前prefix |
+| 472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/) |[Java](./src/concatenatedWords.java)|1. for loop + word break解法 <br> 2. Trie + dfs <br> 对当前string进行dfs, 找到一个存在的prefix之后，再对之后的substring进行dfs（for loop） |
 | | **Design**| |
 | 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | | **一些神奇的算法**| |
