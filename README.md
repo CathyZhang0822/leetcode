@@ -123,6 +123,7 @@ Just want to push myself to practice coding
 | 648 | [Replace Words](https://leetcode.com/problems/replace-words/) | [Java](./src/replaceWords.java)| 一道很直观的trie的题目，对于每个word,找包含的最短的prefix|
 | 677 | [Map Sum](https://leetcode.com/problems/map-sum-pairs/) |[Java](./src/MapSum.java)|还是那关键的一步：相对于normal trienode，加了一个set<string> strings. 表示有多少string的prefix是当前prefix |
 | 472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/) |[Java](./src/concatenatedWords.java)|1. for loop + word break解法 <br> 2. Trie + dfs <br> 对当前string进行dfs, 找到一个存在的prefix之后，再对之后的substring进行dfs（for loop） |
+| 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/) |[Java](./src/wordSearchII.java)| word search I for loop 版本，但是会tle，用trie优化|
 | | **Design**| |
 | 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | | **一些神奇的算法**| |
@@ -133,4 +134,11 @@ Just want to push myself to practice coding
 | L |Max Different |[Java](./src/linkedinoa2.java)| 挺简单的，我好像用了个PQ |
 | L |Can U Sort| [Java](./src/canUSort.java) | bucket sort |
 | 百度 | 有多少不上升/不下降序列  |[Java](./src/baiduoa.java) | dfs -> memorized dfs -> 感觉DP可以做还没想出来 |
-
+| | *Google 面经*| |
+| 1 |Concatenated String |[Java](./src/concatenatedString.java) | 1、BFS 2. DP，类似于word break，但是要存储所有的valid combination |
+| 2 (lc 890)|Find and Replace Pattern |[Java](./src/wordPattern.java)| 1. lc这道题是要求双向映射都要有唯一性 2.google面经说可以存在 a->b, c->b情况。<br> follow up: 字符变换是否需要中间变量->hashmap映射是否有环 |
+| | *Karat 面经* | |
+| 1 |有向图三小问 |[Java](./src/findAncestor.java)|1. 第一问是只有0个parents和只有1个parent的节点 <br> 2. 第二问是 两个指定的点有没有公共祖先  <br> 3.第三问是就一个点的最远祖先 |
+| 2.(lc 227) | [Basic Calculator](https://leetcode.com/problems/basic-calculator-ii/description/) |[Java](./src/calculator.java) |只含有+,-,/,* 和空格。用stack |
+| 3.(lc 224) | [Basic Calculator II](https://leetcode.com/problems/basic-calculator/) | [Java](./src/calculatorII.java)| 只含有+，-, (, ), 和空格。面对有括号的情况，我必将倾向于用recursive的方法，因为括号里面是subproblem。<br>优化recursive方法，把index设置成全局，或者存在int[] index里面|
+| 4 | Task By Level |[Java](./src/taskByLevel.java) |一道经典的topological sort题目（indegree + BFS。但是这里构造graph是用的map: parent : list of children |
