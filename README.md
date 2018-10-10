@@ -135,7 +135,7 @@ Just want to push myself to practice coding
 | L |Can U Sort| [Java](./src/canUSort.java) | bucket sort |
 | 百度 | 有多少不上升/不下降序列  |[Java](./src/baiduoa.java) | dfs -> memorized dfs -> 感觉DP可以做还没想出来 |
 | | *Google 面经*| |
-| 1 |Concatenated String |[Java](./src/concatenatedString.java) | 1、BFS 2. DP，类似于word break，但是要存储所有的valid combination |
+| 1 |Concatenated String |[Java](./src/concatenatedStrinng.java) | 1、BFS 2. DP，类似于word break，但是要存储所有的valid combination |
 | 2 (lc 890)|Find and Replace Pattern |[Java](./src/wordPattern.java)| 1. lc这道题是要求双向映射都要有唯一性 2.google面经说可以存在 a->b, c->b情况。<br> follow up: 字符变换是否需要中间变量->hashmap映射是否有环 |
 | | *Karat 面经* | |
 | 1 |有向图三小问 |[Java](./src/findAncestor.java)|1. 第一问是只有0个parents和只有1个parent的节点 <br> 2. 第二问是 两个指定的点有没有公共祖先  <br> 3.第三问是就一个点的最远祖先 |
