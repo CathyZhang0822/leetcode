@@ -141,7 +141,10 @@ Just want to push myself to practice coding
 | 1 |有向图三小问 |[Java](./src/findAncestor.java)|1. 第一问是只有0个parents和只有1个parent的节点 <br> 2. 第二问是 两个指定的点有没有公共祖先  <br> 3.第三问是就一个点的最远祖先 |
 | 2.(lc 227) | [Basic Calculator](https://leetcode.com/problems/basic-calculator-ii/description/) |[Java](./src/calculator.java) |只含有+,-,/,* 和空格。用stack |
 | 3.(lc 224) | [Basic Calculator II](https://leetcode.com/problems/basic-calculator/) | [Java](./src/calculatorII.java)| 只含有+，-, (, ), 和空格。面对有括号的情况，我必将倾向于用recursive的方法，因为括号里面是subproblem。<br>优化recursive方法，把index设置成全局，或者存在int[] index里面|
+| 4 | [Basic Calculator III]|[Java](./src/calculatorIII.java)|含有+, -, *, /, (, )等情况 |
+| 5 | [Basic Calculator IV]|[Java](./src/calculatorIV.java)|含有+，-，（，）和 变量名 |
 | 4 | Task By Level |[Java](./src/taskByLevel.java) |一道经典的topological sort题目（indegree + BFS。但是这里构造graph是用的map: parent : list of children |
 | 5 | Security System |[Java](./src/securitySystem.java)|1.找到mismatched person。关键是用0:屋外, 1:屋内。表示状态。 2.关键是two pointer的helper function |
 | 6 | 矩阵 |[Java](./src/findRectanangles.java) |1.只有一个矩阵 2.有多个矩阵，互相不重叠 3.不再是矩阵而是形状不规则的区域(有点像number of islands)万事无他唯手熟尔|
 | 7 | Domain问题|[Java](./src/Domain.java)|1. 返回domain和所有sub domain被click的总次数 <br> 2.找出两个user之间的longest continuous common history（Longest Common Substring）问题啊！|
+| 8 | 设计一个sparse vector class|[Java](./src/sparseVector.java)| |
