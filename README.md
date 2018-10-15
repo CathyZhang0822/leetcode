@@ -62,6 +62,7 @@ Just want to push myself to practice coding
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Java](./src/deleteNodeInBST.java) |1. search for a node to remove <br> 2. If the node is found, delete the node <br>|
 | 109 | [Convert Sorted List into Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[Java](./src/lltoBST.java)|Divide and Conquer |
 | | **DP, Palindrome(Substring, Subsequence, Subarray..)**| | |
+| | **DP, Palindrome(Substring, Subsequence, Subarray..)**| | |
 | LC外 | [Longest Common Substring](https://en.wikipedia.org/wiki/Longest_common_substring_problem) | [Java](./src/longestCommonSubstring.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 |
 | LC外 | [Longest Common Subsequence](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) | [Java](./src/longestCommonSubsequence.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 <br> if(s(i)!=t(j)): DP(i)(j) = Math.mDP(i-1)(j-1)|
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Java](./src/longestPalindromicSubstring.java) | Approach 1. DP: boolean DP(i)(j) = (DP(i+1)(j-1) && (s(i) == s(j))即当两边的字符一样且substring也是palindrome。 二维boolean DP矩阵，从对角线往斜上方走。T:O(n^2) S:O(n^2) <br> Approach 2: expand function T:O(n^2) S:O(1)|
@@ -147,4 +148,4 @@ Just want to push myself to practice coding
 | 7 | Security System |[Java](./src/securitySystem.java)|1.找到mismatched person。关键是用0:屋外, 1:屋内。表示状态。 2.关键是two pointer的helper function |
 | 8 | 矩阵 |[Java](./src/findRectanangles.java) |1.只有一个矩阵 2.有多个矩阵，互相不重叠 3.不再是矩阵而是形状不规则的区域(有点像number of islands)万事无他唯手熟尔|
 | 9 | Domain问题|[Java](./src/Domain.java)|1. 返回domain和所有sub domain被click的总次数 <br> 2.找出两个user之间的longest continuous common history（Longest Common Substring）问题啊！|
-| 10 | 设计一个sparse vector class|[Java](./src/sparseVector.java)| |
+| 10 | 设计一个sparse vector class|[Java](./src/sparseVector.java)|实现 add, dot, cosine 操作 |

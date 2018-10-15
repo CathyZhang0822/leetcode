@@ -12,7 +12,7 @@ public class longestCommonSubstring {
 
   Dynamic Programming can be used to find the longest common substring in O(m*n) time.
   find the longest common suffix for all pairs of prefixes of the strings. The longest common suffix is
-  if(s[i] == s[j]): DP[i][j] = DP[i-1][j-1] = 1
+  if(s[i] == s[j]): DP[i][j] = DP[i-1][j-1] + 1
   if(s[i] == s[j]): DP[i][j] = 0
   DP[i][j] means longest substring ends at s[i]&t[j]
   (对于二维网格，是一行一行走下来的，先走一行再走下一行)
