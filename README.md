@@ -106,7 +106,7 @@ Just want to push myself to practice coding
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Java](./src/rotateList.java) | 1. Get the length 2. move to the (length - n%length) node 3. do the rotation|
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | [Java](./src/partitionList.java) |iterate 两遍，非常strightforward |
 | 117 | [Populating Next Right Pointers in Each Node I,II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [Java](./src/populateNextPointer.java) |1. 如果没有space要求，用一个queue BFS就行 <br> 2. O(1) space. Make use of next pointer |
-| 138 | [**Copy List with Random Pointer**](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Java](./src/copyListWithRandom.java) | |
+| 138 | [**Copy List with Random Pointer**](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Java](./src/copyListWithRandom.java) |method 1: use a hashmap 1. copy all nodes 2. assign next and random pointer <br> method 2: space O(1) 把每个node duplicated 一下, 放在后面|
 | | **Math** | |
 | 7 |[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Java](./src/reverseInteger.java) |**这道题的关键是处理overflow的问题**<br>`Integer.MAX_VALUE:2147483647` <br> `Integer.MIN_VALUE:-2147483648` <br> 1.Pop and Push Digits & Check before Overflow <br>2. 作弊方法catch exception|
 | 9 |[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Java](./src/palindromNum.java) |1. contert to string 2. **重点掌握** 思路有些像上面的reverse integer，但是只用reverse 一半，有效防止over flow|
