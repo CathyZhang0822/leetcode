@@ -68,8 +68,10 @@ Just want to push myself to practice coding
 | 98 |  [Valid Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Java](./src/validBST.java) |1:recursively inorder traverse the tree into a list. T:O(n) S:O(n)<br> 2.iteratively inorder traverse the tree using a stack. T:O(n) S:O(n) <br> 3.recursively inorder traverse the tree using two boundary values: min, max T:O(n) S:O(1) <br>考虑integer overflow：long pre = Long.MIN_VALUE; |
 | 623 | [Add One Row To Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Java](./src/add1Row.java) | 一道经典BFS的题，注意corner case |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Java](./src/deleteNodeInBST.java) |1. search for a node to remove <br> 2. If the node is found, delete the node <br>|
-| 865 | [Smallest Substree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) |[Java]() | |
+| 865 | [Smallest Substree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) |[Java](./src/smallestSubtree.java) |method 1: BFS + Lowest Common Ancestor <br> method 2: dfs (discuss 里面大佬说的) 学习一下 |
+| |convert tree to list | 相关问题 | |
 | 109 | [Convert Sorted List into Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[Java](./src/lltoBST.java)|Divide and Conquer |
+| 897 | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Java](./src/inorderBST.java)|还是用那个技巧：用一个全局变量prev |
 | | **DP, Palindrome(Substring, Subsequence, Subarray..)**| | |
 | LC外 | [Longest Common Substring](https://en.wikipedia.org/wiki/Longest_common_substring_problem) | [Java](./src/longestCommonSubstring.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 |
 | LC外 | [Longest Common Subsequence](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) | [Java](./src/longestCommonSubsequence.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 <br> if(s(i)!=t(j)): DP(i)(j) = Math.mDP(i-1)(j-1)|
@@ -144,10 +146,10 @@ Just want to push myself to practice coding
 | L |Max Different |[Java](./src/linkedinoa2.java)| 挺简单的，我好像用了个PQ |
 | L |Can U Sort| [Java](./src/canUSort.java) | bucket sort |
 | 百度 | 有多少不上升/不下降序列  |[Java](./src/baiduoa.java) | dfs -> memorized dfs -> 感觉DP可以做还没想出来 |
-| | *Google 面经*| |
+| | **Google 面经**| |
 | 1 |Concatenated String |[Java](./src/concatenatedStrinng.java) | 1、BFS 2. DP，类似于word break，但是要存储所有的valid combination |
 | 2 (lc 890)|Find and Replace Pattern |[Java](./src/wordPattern.java)| 1. lc这道题是要求双向映射都要有唯一性 2.google面经说可以存在 a->b, c->b情况。<br> follow up: 字符变换是否需要中间变量->hashmap映射是否有环 |
-| | *Karat 面经* | |
+| | **Karat 面经** | |
 | 1 |有向图三小问 |[Java](./src/findAncestor.java)|1. 第一问是只有0个parents和只有1个parent的节点 <br> 2. 第二问是 两个指定的点有没有公共祖先  <br> 3.第三问是就一个点的最远祖先 |
 | 2.(lc 227) | [Basic Calculator](https://leetcode.com/problems/basic-calculator-ii/description/) |[Java](./src/calculator.java) |只含有+,-,/,* 和空格。用stack |
 | 3.(lc 224) | [Basic Calculator II](https://leetcode.com/problems/basic-calculator/) | [Java](./src/calculatorII.java)| 只含有+，-, (, ), 和空格。面对有括号的情况，我必将倾向于用recursive的方法，因为括号里面是subproblem。<br>优化recursive方法，把index设置成全局，或者存在int[] index里面|
