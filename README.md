@@ -57,6 +57,7 @@ Just want to push myself to practice coding
 | 449 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/) |[Java](./src/CodecBST.java)| 1. preorder traverse. Take advantage of BST, 不需要全局变量，就可以判断string里面哪边是左树，哪边是右树 <br> 2. use a queue, level order traverse |
 | 428 | [Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) |[Java](./src/CodecNary.java)|serialize: "preorder" traverse: root \[children] <br> deserialize: 结合了297和calculator的一些技巧。结合括号的recursion。 |
 | 431 | [Encode N-ary tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree/) | [Java](./src/CodecConvert.java) |思路：每一层最左边的child作为新root <br> encode: 对于跟自己同一层的nodes，构成其right substree. 自己本身的children，构成其left substree.<br>decode: recursion返回 list<Node>,左边返回的list<node>是自己的children，右边返回的是自己的partners|
+| 652 | [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | [Java](./src/findDupSubTree.java) |关键是利用积累的serialize tree的技巧 |
 | 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)| [Java](./src/distanceK.java)| **这道题太好了** 建造了一个新的含有parent的node，clone一遍tree，然后dfs/bfs |
 | 834 | [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/)|[Java](./src/sumOfDistances.java)|从n^2 简化至 n, 关键是理解：<br> When we move our root from one node to its connected node, one part of nodes get closer, one the other part get further. |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./src/inorder.java) |方法1：recursively inorder traverse the tree into a list. T:O(n) S:O(h) <br>方法2：iteratively inorder traverse the tree, use a stack(在stack pop的时候值放进res里面) T:O(n) S:O(n)|
@@ -72,6 +73,7 @@ Just want to push myself to practice coding
 | |convert tree to list | 相关问题 | |
 | 109 | [Convert Sorted List into Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[Java](./src/lltoBST.java)|Divide and Conquer |
 | 897 | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Java](./src/inorderBST.java)|还是用那个技巧：用一个全局变量prev |
+| 156 | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)|[Java](./src/binaryTreeUpsideDown.java) |two methods: 1. recursive 2. iterative <br> 其思路有点像reverse linked list|
 | | **DP, Palindrome(Substring, Subsequence, Subarray..)**| | |
 | LC外 | [Longest Common Substring](https://en.wikipedia.org/wiki/Longest_common_substring_problem) | [Java](./src/longestCommonSubstring.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 |
 | LC外 | [Longest Common Subsequence](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) | [Java](./src/longestCommonSubsequence.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 <br> if(s(i)!=t(j)): DP(i)(j) = Math.mDP(i-1)(j-1)|
