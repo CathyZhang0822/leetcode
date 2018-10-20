@@ -70,10 +70,11 @@ Just want to push myself to practice coding
 | 623 | [Add One Row To Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Java](./src/add1Row.java) | 一道经典BFS的题，注意corner case |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Java](./src/deleteNodeInBST.java) |1. search for a node to remove <br> 2. If the node is found, delete the node <br>|
 | 865 | [Smallest Substree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) |[Java](./src/smallestSubtree.java) |method 1: BFS + Lowest Common Ancestor <br> method 2: dfs (discuss 里面大佬说的) 学习一下 |
+| 894 | [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | [Java](./src/allFullBT.java) | 警醒一下recursion: 转化成subproblem, 然后call 自己 [solution](https://leetcode.com/problems/all-possible-full-binary-trees/solution/)|
 | |convert tree to list | 相关问题 | |
 | 109 | [Convert Sorted List into Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[Java](./src/lltoBST.java)|Divide and Conquer |
 | 897 | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Java](./src/inorderBST.java)|还是用那个技巧：用一个全局变量prev |
-| 156 | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)|[Java](./src/binaryTreeUpsideDown.java) |two methods: 1. recursive 2. iterative <br> 其思路有点像reverse linked list|
+| 156 | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)|[Java](./src/binaryTreeUpsideDown.java) |two methods: 1. recursive 2. iterative(三步：store, change, update) <br> 其思路有点像reverse linked list|
 | | **DP, Palindrome(Substring, Subsequence, Subarray..)**| | |
 | LC外 | [Longest Common Substring](https://en.wikipedia.org/wiki/Longest_common_substring_problem) | [Java](./src/longestCommonSubstring.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 |
 | LC外 | [Longest Common Subsequence](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) | [Java](./src/longestCommonSubsequence.java) | DP: O(n*m) <br> if(s(i) == t(j)): DP(i)(j) = DP(i-1)(j-1)+1 <br> if(s(i)!=t(j)): DP(i)(j) = Math.mDP(i-1)(j-1)|
