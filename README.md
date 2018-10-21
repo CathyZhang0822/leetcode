@@ -91,6 +91,7 @@ Just want to push myself to practice coding
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Java](./src/maxProductSubarray.java)| 因为有负数，所以我们不仅要keep track of imax 还要keep track of imin. 乘负数的时候，小的会变成大的，大的会变成小的|
 | 325 | [Maximum Size Subarray Sum Equals K](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) | [Java](./src/subArraySumKMaxSize.java)|presum + hashmap(presum : index) <br> pay attention: map.put(0,-1);|
 | 560 |[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) |[Java](./src/subArraySumk.java)| presum + hashmap (presum : frequency) <br> follow up: if all elements >= 0 (space O(1)). Two pointers |
+| 926 | [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/) | [Java](./src/flipToMono.java) | 养成手感了，挺有意思一道题|
 | | **Linked List** | | |
 | lc外 | Generate Linked List| [Java](./src/generateLinkedList.java)| 自己写的class用来快速构建linked list 1.generate 2. show|
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./src/reverseLinkedList.java) |经典题目 关键在于next指向previous node同时，不能丢掉后面linked list的头 <br> 1. iterative method 2. recursive method |
