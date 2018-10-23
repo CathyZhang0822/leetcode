@@ -52,7 +52,7 @@ Just want to push myself to practice coding
 | LC外|[FangFang goes home]() |[Java](./src/pathToHome.java) | 自己出着玩的题目. 一个棋盘，从左上角到右下角一共：C(m+n, m) 或 C(m+n, n)种|
 | | **BFS**| |
 | 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) |[Java](./src/snakeAndLadders.java) |经典BFS,求最短路径。别忘了用visited防止TLE |
-| | **tree** | | |
+| | **Tree** | | |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./src/Codec.java) |我把它写在了tree的第一个是因为之后都要用它来构建tree了。总结了两种方法，熟练掌握。<br>1. use queue to traverse/construct the tree level by level <br> 2. recursively pre-order traverse/construct the tree |
 | 449 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/) |[Java](./src/CodecBST.java)| 1. preorder traverse. Take advantage of BST, 不需要全局变量，就可以判断string里面哪边是左树，哪边是右树 <br> 2. use a queue, level order traverse |
 | 428 | [Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) |[Java](./src/CodecNary.java)|serialize: "preorder" traverse: root \[children] <br> deserialize: 结合了297和calculator的一些技巧。结合括号的recursion。 |
@@ -60,7 +60,7 @@ Just want to push myself to practice coding
 | 652 | [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | [Java](./src/findDupSubTree.java) |关键是利用积累的serialize tree的技巧 |
 | 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)| [Java](./src/distanceK.java)| **这道题太好了** 建造了一个新的含有parent的node，clone一遍tree，然后dfs/bfs |
 | 834 | [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/)|[Java](./src/sumOfDistances.java)|从n^2 简化至 n, 关键是理解：<br> When we move our root from one node to its connected node, one part of nodes get closer, one the other part get further. |
-| |inorder, preorder, poster| 相关运用，变形 | 关键是要融会贯通 |
+| |inorder, preorder, poster|  | 相关运用，变形关键是要融会贯通 |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./src/inorder.java) |方法1：recursively inorder traverse the tree into a list. T:O(n) S:O(h) <br>方法2：iteratively inorder traverse the tree, use a stack(在stack pop的时候值放进res里面) T:O(n) S:O(n)|
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./src/preorder.java) | 两种iterative的方法：<br> 1.use a stack(在push node into stack的时候, add val into res) T:O(n) S:O(n) <br> 2.用一个stack,对于一个Node的children，从右往左push，那么pop的时候就是从左往右(这种方法很适合推广到n-ary)|
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./src/postorder.java) | **iterative**方法，观察postorder: 左 右 root, 其实就是preorder 左右翻转版再倒过来|
@@ -72,7 +72,7 @@ Just want to push myself to practice coding
 | 701 | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) |[Java](./src/insertIntoBST.java)|Got inspired by 285(inorder successor) 关键在于找到该val对应的successor |
 | 173 | [BST Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) |[Java](./src/BSTIterator.java) |需要非常熟练掌握。**average time: O(1)** <br> 虽然next()有时候会是O(h),但是总体来说每个Node被visited了2次，一共call了N次|
 | 98 |  [Valid Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Java](./src/validBST.java) |1:recursively inorder traverse the tree into a list. T:O(n) S:O(n)<br> 2.iteratively inorder traverse the tree using a stack. T:O(n) S:O(n) <br> 3.recursively inorder traverse the tree using two boundary values: min, max T:O(n) S:O(1) <br>考虑integer overflow：long pre = Long.MIN_VALUE; |
-| |bfs dfs | top down, bottom up | |
+| |bfs dfs |  |top down, bottom up |
 | 623 | [Add One Row To Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Java](./src/add1Row.java) | 一道经典BFS的题，注意corner case |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Java](./src/deleteNodeInBST.java) |1. search for a node to remove <br> 2. If the node is found, delete the node <br>|
 | 865 | [Smallest Substree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) |[Java](./src/smallestSubtree.java) |method 1: BFS + Lowest Common Ancestor <br> method 2: dfs (discuss 里面大佬说的) 学习一下 |
@@ -80,7 +80,7 @@ Just want to push myself to practice coding
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/) |[Java](./src/maxDepthN.java) | bottom to up 超时了，可以考虑top down dfs 或者 bfs |
 | 298 | [Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[Java](./src/btlongestConSeq.java) | top down dfs + 打擂台|
 | 549 | [Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)|[Java](./src/btlongestConSeqII.java) |top down then bottom up dfs + 打擂台 |
-| |convert tree to list | 相关问题 | |
+| |convert tree to list | | 相关问题 |
 | 109 | [Convert Sorted List into Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[Java](./src/lltoBST.java)|Divide and Conquer |
 | 897 | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Java](./src/inorderBST.java)|还是用那个技巧：用一个全局变量prev |
 | 156 | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)|[Java](./src/binaryTreeUpsideDown.java) |two methods: 1. recursive 2. iterative(三步：store, change, update) <br> 其思路有点像reverse linked list|
