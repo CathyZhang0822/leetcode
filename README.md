@@ -78,6 +78,8 @@ Just want to push myself to practice coding
 | 865 | [Smallest Substree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) |[Java](./src/smallestSubtree.java) |method 1: BFS + Lowest Common Ancestor <br> method 2: dfs (discuss 里面大佬说的) 学习一下 |
 | 894 | [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | [Java](./src/allFullBT.java) | 警醒一下recursion: 转化成subproblem, 然后call 自己 [solution](https://leetcode.com/problems/all-possible-full-binary-trees/solution/)|
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/) |[Java](./src/maxDepthN.java) | bottom to up 超时了，可以考虑top down dfs 或者 bfs |
+| 298 | [Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[Java](./src/btlongestConSeq.java) | top down dfs + 打擂台|
+| 549 | [Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)|[Java](./src/btlongestConSeqII.java) |top down then bottom up dfs + 打擂台 |
 | |convert tree to list | 相关问题 | |
 | 109 | [Convert Sorted List into Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[Java](./src/lltoBST.java)|Divide and Conquer |
 | 897 | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Java](./src/inorderBST.java)|还是用那个技巧：用一个全局变量prev |
