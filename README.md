@@ -60,9 +60,14 @@ Just want to push myself to practice coding
 | 652 | [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | [Java](./src/findDupSubTree.java) |关键是利用积累的serialize tree的技巧 |
 | 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)| [Java](./src/distanceK.java)| **这道题太好了** 建造了一个新的含有parent的node，clone一遍tree，然后dfs/bfs |
 | 834 | [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/)|[Java](./src/sumOfDistances.java)|从n^2 简化至 n, 关键是理解：<br> When we move our root from one node to its connected node, one part of nodes get closer, one the other part get further. |
+| |inorder, preorder, poster| 相关运用，变形 | 关键是要融会贯通 |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./src/inorder.java) |方法1：recursively inorder traverse the tree into a list. T:O(n) S:O(h) <br>方法2：iteratively inorder traverse the tree, use a stack(在stack pop的时候值放进res里面) T:O(n) S:O(n)|
-| 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./src/preorder.java) | 这里只写了iterative：iteratively preorder traverse the tree, use a stack(在push node into stack的时候, add val into res) T:O(n) S:O(n)|
+| 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./src/preorder.java) | 两种iterative的方法：<br> 1.use a stack(在push node into stack的时候, add val into res) T:O(n) S:O(n) <br> 2.用一个stack,对于一个Node的children，从右往左push，那么pop的时候就是从左往右(这种方法很适合推广到n-ary)|
+| 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./src/postorder.java) | **iterative**方法，观察postorder: 左 右 root, 其实就是preorder 左右翻转版再倒过来|
+| 589 | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | [Java](./src/naryTreePreorder.java) |关键也是**iterative**. 也是两种方法，从preorder binary tree 的两种方法中衍生出来 |
+| 590 | [N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)| [Java](./src/naryTreePostorder.java)|preorder 左右翻转版再倒过来|
 | 285 | [**Inorder Successor in BST**](https://leetcode.com/problems/inorder-successor-in-bst/) |[Java](./src/inorderSuccessor.java) |method 1 : take advantage of BST time: O(h) <br> method 2: 用stack, 适用于general binary tree|
+| 255 | [Verify Preorder Sequence in BST](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) | [Java](./src/preorderBST.java) | divide and conquer: O(nlogn)|
 | 272 | [Closet BST Value ii](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) |[Java](./src/closetKValues.java) |Got inspired by 285(inorder successor)。Time: O(klog(n)|
 | 701 | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) |[Java](./src/insertIntoBST.java)|Got inspired by 285(inorder successor) 关键在于找到该val对应的successor |
 | 173 | [BST Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) |[Java](./src/BSTIterator.java) |需要非常熟练掌握。**average time: O(1)** <br> 虽然next()有时候会是O(h),但是总体来说每个Node被visited了2次，一共call了N次|
