@@ -143,6 +143,8 @@ Just want to push myself to practice coding
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Java](./src/removeKDigits.java) |**非常好的一道题**从straightforward solution到optimized solution(USE A STACK) <br> **思考** 如果是remove k digits 边最大呢？|
 | | **Graph** | |
 | 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Java](./src/graphValidTree.java)|判断一个(无向)graph是不是valid tree: <br> 1. 不能有cycles 2. 所有node都要connected <br> 有环：1. **DFS**:一直往下走的path会回到某个已经被visited的点  2. **BFS** queue里面会有重复的点|
+| 323 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Java](./src/numOfComp.java)| 跟number of islands差不多, graph + dfs |
+| 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/)|[Java](./src/evaluateDiv.java) |1. edge 有weight 2. dfs + graph |
 | 785 | [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/)|[Java](./src/isBipartite.java)|**经典** 1. 从一个没有染色的node开始，BFS把所有与之构成graph的node染色 <br> 2. 继续从另一个没有染色的node开始，直到所有的node都染色了 |
 | 886 | [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|[Java](./src/bipartition.java) | 同是bipartite graph问题.不过这个我们需要自己建造一个graph. |
 | 928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/) |[Java](./src/minMalware.java)|**还是要多练习图的遍历** BFS图的遍历，注意细节：add into queue的时候标记为visited |

@@ -1,10 +1,6 @@
 import java.util.*;
 public class graphValidTree {
-    public static void main(String[] args){
-
-    }
-
-
+    // method 1: DFS
     public static boolean validTreeDFS(int n, int[][] edges) {
         // 1: build the graph
         List<List<Integer>> adjlist = new ArrayList<>();
@@ -32,6 +28,8 @@ public class graphValidTree {
         return false;
     }
 
+
+    // method 2: BFS
     // 0: not visited
     // 1: visiting 该node在queue里面，add 进queue的时候标为1
     // 2：visited 从 queue 里remove出来的时候标记为2
