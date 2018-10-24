@@ -133,11 +133,12 @@ Just want to push myself to practice coding
 | 9 |[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Java](./src/palindromNum.java) |1. contert to string 2. **重点掌握** 思路有些像上面的reverse integer，但是只用reverse 一半，有效防止over flow|
 | 50 |[Pow(x,n)](https://leetcode.com/problems/powx-n/) | [Java](./src/pow.java) |recursive method: T(logn) S(logn) 1. n < 0 <br> 2. n == 0 <br> 3. n % 2 == 0 <br> 4. n % 2 == 1 |
 | 65 |[Valid Number](https://leetcode.com/problems/valid-number/) |[Java](./src/validNumber.java) | a general pattern: "-xx.xxe-xx" |
-| | **Heap (Top K 问题 quick select, treeset)** | |
+| | **Priority Queue** | | (Top K 问题 quick select, treeset) intervals |
 | 346 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)| [Java](./src/topkFrequentElements.java) |1. use PriorityQueue Time: n + k*log(n) <br> 2.bucket sort T:O(n) List<Integer>[] bucket = new **List**[nums.length+1]; |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Java](./src/kthLargest.java) | **Quick Select** (注意partition function里面用two pointers swap的模版)|
 | 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |[Java](./src/findMedian.java) | two heaps: minheap to store the larger part, maxheap to store the smaller part|
 | Pin面经 |[get Top K Rating]()|[Java](./src/getTopKRating.java) |有一个app,要实现两个方法：updateRating()和getTopKRating()，要求getTopK()的时间复杂度O(1) <br> 后怕，发现了自己的知识盲区|
+| 759 | [Employee Free Time](https://leetcode.com/problems/employee-free-time/)|[Java](./src/employeeTime.java)| Priority Queue solution based on merging intervals |
 | | **Stack,Queue**| |
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Java](./src/removeKDigits.java) |**非常好的一道题**从straightforward solution到optimized solution(USE A STACK) <br> **思考** 如果是remove k digits 边最大呢？|
