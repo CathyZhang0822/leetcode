@@ -142,6 +142,7 @@ Just want to push myself to practice coding
 | 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [Java](./src/decodeString.java) | 1. use stack Time: O(n) Space: O(n) <br> 2. use recursion Time:O(n)我觉得O(n) 因为string的每个元素只走了一遍 Space:O(1)|
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Java](./src/removeKDigits.java) |**非常好的一道题**从straightforward solution到optimized solution(USE A STACK) <br> **思考** 如果是remove k digits 边最大呢？|
 | | **Graph** | |
+| 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Java](./src/graphValidTree.java)|判断一个(无向)graph是不是valid tree: <br> 1. 不能有cycles 2. 所有node都要connected <br> 有环：1. **DFS**:一直往下走的path会回到某个已经被visited的点  2. **BFS** queue里面会有重复的点|
 | 785 | [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/)|[Java](./src/isBipartite.java)|**经典** 1. 从一个没有染色的node开始，BFS把所有与之构成graph的node染色 <br> 2. 继续从另一个没有染色的node开始，直到所有的node都染色了 |
 | 886 | [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|[Java](./src/bipartition.java) | 同是bipartite graph问题.不过这个我们需要自己建造一个graph. |
 | 928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/) |[Java](./src/minMalware.java)|**还是要多练习图的遍历** BFS图的遍历，注意细节：add into queue的时候标记为visited |
