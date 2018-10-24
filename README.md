@@ -145,6 +145,7 @@ Just want to push myself to practice coding
 | 785 | [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/)|[Java](./src/isBipartite.java)|**经典** 1. 从一个没有染色的node开始，BFS把所有与之构成graph的node染色 <br> 2. 继续从另一个没有染色的node开始，直到所有的node都染色了 |
 | 886 | [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|[Java](./src/bipartition.java) | 同是bipartite graph问题.不过这个我们需要自己建造一个graph. |
 | 928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/) |[Java](./src/minMalware.java)|**还是要多练习图的遍历** BFS图的遍历，注意细节：add into queue的时候标记为visited |
+| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/)|[Java]() |**经典的拓扑排序问题** 能想到的需要熟练掌握的子问题: <br> 1.构建directed graph 需要好好思考是 child:parents 还是 parent:children <br> 2. 判断有向图里面有没有环 <br> 3.打印拓扑排序  |
 | 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) |[Java](./src/alienDictionary.java)|**很好的一道题** step 1: build directed graph <br> step 2: topological sort<br>还要理解lexicographical order的正确意思来build正确的tree |
 | | **Trie** | |
 | 208 | [Implement Trie(Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Java](./src/Trie.java)| Trie 相关题目的基础，需要知道它是如何实现的 |
