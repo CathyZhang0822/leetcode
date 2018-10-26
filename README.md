@@ -163,7 +163,10 @@ Just want to push myself to practice coding
 | 472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/) |[Java](./src/concatenatedWords.java)|1. for loop + word break解法 <br> 2. Trie + dfs <br> 对当前string进行dfs, 找到一个存在的prefix之后，再对之后的substring进行dfs（for loop） |
 | 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/) |[Java](./src/wordSearchII.java)| word search I for loop 版本，但是会tle，用trie优化|
 | 425 | [Word Squares](https://leetcode.com/problems/word-squares/)|[Java](./src/wordSquare.java)|Trie + DFS 结合 [Explanation](https://leetcode.com/problems/word-squares/discuss/91333/Explained.-My-Java-solution-using-Trie-126ms-1616) |
+| P面经| [打印log]()|[Java](./src/visualizeLog.java) |1.根据题意建立trie tree 2.DFS打印trie tree <br>根据不同情况给trie node赋予不同property children, count, list of words等等 |
 | | **Design**| |
+| 146 | [LRU](https://leetcode.com/problems/lru-cache/)|[Java](./src/LRU.java) |经典题目LRU，hashmap + doubly linkedlist <br> dll head:most recent used, tail:least recent used |
+| 460 | [LFU](https://leetcode.com/problems/lfu-cache/)|[Java](./src/LFU.java) |LRU加强版 <br>Map<Integer, Integer> vals; <br> Map<Integer, Integer> counts; <br> Map<Integer, LinkedHashSet<Integer>> lists; <br>min什么时候变换？ |
 | 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | 103 |[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) |[Java1](./src/hitCounter.java)[Java2](./src/HitCounter2.java) |1.用一个简单的queue做(当重复在一个timestampt hit很多次就会很costring) <br> 2.用circular array（推荐） |
 | | **一些神奇的算法**| |
