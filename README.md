@@ -169,6 +169,8 @@ Just want to push myself to practice coding
 | 460 | [LFU](https://leetcode.com/problems/lfu-cache/)|[Java](./src/LFU.java) |LRU加强版 <br>Map<Integer, Integer> vals; <br> Map<Integer, Integer> counts; <br> Map<Integer, LinkedHashSet<Integer>> lists; <br>min什么时候变换？ |
 | 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | 103 |[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) |[Java1](./src/hitCounter.java)[Java2](./src/HitCounter2.java) |1.用一个简单的queue做(当重复在一个timestampt hit很多次就会很costring) <br> 2.用circular array（推荐） |
+| | **board 相关题目** | |
+| 939 | [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/)|[Java](./src/minAreaRec.java) | 跟google面试题一样，所有point存在hashmap里面，通过看对角线来看是否构成矩形 |
 | | **一些神奇的算法**| |
 | 287 |[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [Java](./src/findDup.java) |这道题一开始就有很多constraints,但是我觉得面试中不可能一开始就有这么多constrains <br> 1. instinct method: use hashmap <br> 2.（虽然modify了array）因为n+1 长度，但是数字只在1-n之间，用swap把它们放到了对应的位置上 3. 很精妙的binary search算法 （但是判断语句跟平常不太一样）|
 | | **一些OA** | |

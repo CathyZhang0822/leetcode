@@ -7,7 +7,7 @@ public class calculatorIII {
         System.out.println(calculate(s));
     }
 
-    public static int calculate(String s){
+    private static int calculate(String s){
         int res = 0;
         Stack<Integer> stack = new Stack<>();
         char op = '+';
