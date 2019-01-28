@@ -10,15 +10,10 @@ public class minCostTicket {
         for(int day:days){
             set.add(day);
         }
-        System.out.println("days" + set);
-        int res = 0;
         int dp[] = new int[days[days.length-1]+1];
         for(int i = 1; i < dp.length; i ++){
             if(!set.contains(i)){
-                System.out.println("i: " + i);
-                int prev = dp[i-1];
-                System.out.println("prev: "+ prev);
-                dp[i] = prev;
+                dp[i] = dp[i-1];
                 continue;
             }
             int way1 = dp[i-1] + cost[0];
@@ -26,7 +21,6 @@ public class minCostTicket {
             int way3 = i >= 30 ? (dp[i-30] + cost[2]) : (dp[0] + cost[2]);
             dp[i] = Math.min(way1, Math.min(way2, way3));
         }
-        System.out.println(Arrays.toString(dp));
         return dp[days[days.length-1]];
     }
 }

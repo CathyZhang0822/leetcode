@@ -8,7 +8,9 @@ public class TimeMap {
             this.value = value;
         }
     }
+
     Map<String, List<Pair>> map;
+
     public TimeMap() {
         map = new HashMap<>();
     }

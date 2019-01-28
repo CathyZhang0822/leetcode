@@ -9,6 +9,7 @@ Just want to push myself to practice coding
 | 170 | [Two Sum III - Data Structure Design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) | [Java](./src/twoSumDataStructure.java) | Use HashMap to store numbers. Maintain a list with distinct elements. |
 | 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | [Java](./src/twoSumIV.java) | 1. DFS + HashSet Time: O(n), Space: O(n).<br>2. Inorder traversal + two pointers Time: O(n), Space: O(n) <br>3. BST iterator + stack Time: O(n), Space: O(logn) |
 | 15 | [3 sum](https://leetcode.com/problems/3sum/) | [Java](./src/threeSum.java) | for loop + two sum(pay attention to duplicates) Time: O(n^2)|
+| fb 4sum| [4 sum FB面经]()| |//TODO: 如果target是0的话可以用n^2来做 |
 | | **two pointers, sliding window algorithm** | | |
 | 3 | [Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |[Java](./src/longestSubstringWithoutRepeatingCharacters.java) | two pointers, sliding window algorithm |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Java](./src/minWindowSubstring.java) | two pointers, sliding window algorithm |
@@ -102,6 +103,7 @@ Just want to push myself to practice coding
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Java](./src/regularExpressionMatching.java) | |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | [Java](./src/coinChange.java)| 经典DP题目 |
 | 518 | [Coin Change 2](https://leetcode.com/problems/coin-change-2/) | [Java](./src/coinChangeII.java)|1. DFS -> memorized DFS, 注意map的key要用list不要用int[] (存在map里的是reference)<br> 2. DP!!! 从最基本的subproblem开始：只用coin1，加上coin2 .. coin5 |
+| 983 | [Min Cost for Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)| [Java](./src/minCostTicket.java) | 思路来源于coin change这道题 |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Java](./src/maxProductSubarray.java)| 因为有负数，所以我们不仅要keep track of imax 还要keep track of imin. 乘负数的时候，小的会变成大的，大的会变成小的|
 | 325 | [Maximum Size Subarray Sum Equals K](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) | [Java](./src/subArraySumKMaxSize.java)|presum + hashmap(presum : index) <br> pay attention: map.put(0,-1);|
 | 560 |[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) |[Java](./src/subArraySumk.java)| presum + hashmap (presum : frequency) <br> follow up: if all elements >= 0 (space O(1)). Two pointers |
@@ -169,6 +171,7 @@ Just want to push myself to practice coding
 | 460 | [LFU](https://leetcode.com/problems/lfu-cache/)|[Java](./src/LFU.java) |LRU加强版 <br>Map<Integer, Integer> vals; <br> Map<Integer, Integer> counts; <br> Map<Integer, LinkedHashSet<Integer>> lists; <br>min什么时候变换？ |
 | 622 |[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) |[Java](./src/circularQueue.java) | 用array，和巧妙的头尾指针 |
 | 103 |[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) |[Java1](./src/hitCounter.java)[Java2](./src/HitCounter2.java) |1.用一个简单的queue做(当重复在一个timestampt hit很多次就会很costring) <br> 2.用circular array（推荐） |
+| 981 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | [Java](./src/TimeMap.java) [Java2](./src/TimeMap2.java)| 1. 建造一个Pair class，然后binary search 2. treemap 直接用 floorKey() 这个method |
 | | **board 相关题目** | |
 | 939 | [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/)|[Java](./src/minAreaRec.java) | 跟google面试题一样，所有point存在hashmap里面，通过看对角线来看是否构成矩形 |
 | | **一些神奇的算法**| |
