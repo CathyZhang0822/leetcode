@@ -21,6 +21,7 @@ Readme 里面并没有列出所有的题目的解法，只列出一些比较经�
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [Java](./src/permutationInString.java) | sliding window 固定窗口，比较两格hashmap -> 比较两个array -> 维护一个array|
 | 395 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | | |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) |[Java](./src/trappingWater.java)|1.two pointer: left, right. 同时用maxLeft, maxRight 维护boundary高度. 从短边注水 <br> 2.变形：如果有-1，漏水怎么办。 instead of summing up water each bin. we sum up water each container|
+| 992 | [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)| [Java](./src/subArrayKDifferentInteger.java)|这道题巧妙的地方在于！写个sliding window algorithm: get the number of subarrays with **at most K**distinct elements. Then, f(exactly K) = f(atMost K) - f(atMost K-1) |
 | | **binary search** | | |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | [Java](./src/firstBadVersion.java) | Binary Search Time: O(logN) Space: O(1)|
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Java](./src/searchInsertPosition.java) | Binary Search, 注意边界条件 |
