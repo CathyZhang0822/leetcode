@@ -33,6 +33,7 @@ Readme 里面并没有列出所有的题目的解法，只列出一些比较经�
 | 74 | [Search a 2D metrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Java](./src/search2DMetrix.java) | 把2Dmetric看成一个sorted array，还是binary search Time: O(log(m*n)) = O(log(m)+log(n)) |
 | 240 | [Search a 2D metrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Java](./src/search2DMetrixII.java) |1. binary search tree model. Time: O(m+n) <br> 2. binary search Time:O(m*log(n)) |
 | 825 | [Friends Of Appropriate Age](https://leetcode.com/problems/friends-of-appropriate-ages/) | [Java](./src/friendsOfApproriateAge.java) | 1. 如果没有年龄限制 binary search 2.如果有年龄限制可简化，用 counts[] sum[]|
+| google | [在sorted有duplicats array里面，找targe 左右边界]|[Java](./src/binaryS.java)| 找left most和right most只需要改一行代码就好啦 |
 | | **back tracking** | | |
 | 78 | [Subsets](https://leetcode.com/problems/subsets/) | [Java](./src/subsets.java) | back tracking 两种方法构造recursion tree 剪枝的那个TREE更容易处理remove duplicates的问题|
 | 90 | [SubsetsII](https://leetcode.com/problems/subsets-ii/) | [Java](./src/subsetsII.java) | 有duplicates应该怎样处理(对于每个node，剪掉相同的branches) |
