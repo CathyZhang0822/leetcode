@@ -112,6 +112,7 @@ Readme 里面并没有列出所有的题目的解法，只列出一些比较经�
 | 325 | [Maximum Size Subarray Sum Equals K](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) | [Java](./src/subArraySumKMaxSize.java)|presum + hashmap(presum : index) <br> pay attention: map.put(0,-1);|
 | 560 |[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) |[Java](./src/subArraySumk.java)| presum + hashmap (presum : frequency) <br> follow up: if all elements >= 0 (space O(1)). Two pointers |
 | 926 | [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/) | [Java](./src/flipToMono.java) | 养成手感了，挺有意思一道题|
+| 975 | [Odd Even Jump](https://leetcode.com/problems/odd-even-jump/description/)| [Java](./src/oddEvenJump.java) | 1. DP ideal, 从后往头走 2. 学会多熟练运用treemap的ceilingEntry and floorEntry|
 | | **Union Find** | | |
 | | | | |
 | | **Linked List** | | |
