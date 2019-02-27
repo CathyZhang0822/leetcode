@@ -115,6 +115,7 @@ Readme 里面并没有列出所有的题目的解法，只列出一些比较经�
 | 975 | [Odd Even Jump](https://leetcode.com/problems/odd-even-jump/description/)| [Java](./src/oddEvenJump.java) | 1. DP ideal, 从后往头走 2. 学会多熟练运用treemap的ceilingEntry and floorEntry|
 | | **Union Find** | [并查集算法介绍](https://blog.csdn.net/dm_vincent/article/details/7655764)| |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/)| [Java](./src/numOfIsland.java)| 这种解法是用的quick union的方法，即使用parent-link |
+| 305 | [Number of Islands 2](https://leetcode.com/problems/number-of-islands-ii/)|Weighted Union Find. 相比于1，多了weighted步骤，即争取保持树的平衡性 |
 | | **Linked List** | | |
 | lc外 | Generate Linked List| [Java](./src/generateLinkedList.java)| 自己写的class用来快速构建linked list 1.generate 2. show|
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./src/reverseLinkedList.java) |经典题目 关键在于next指向previous node同时，不能丢掉后面linked list的头 <br> 1. iterative method 2. recursive method |
