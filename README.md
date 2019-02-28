@@ -81,6 +81,7 @@ Readme 里面并没有列出所有的题目的解法，只列出一些比较经�
 | 701 | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) |[Java](./src/insertIntoBST.java)|Got inspired by 285(inorder successor) 关键在于找到该val对应的successor |
 | 173 | [BST Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) |[Java](./src/BSTIterator.java) |需要非常熟练掌握。**average time: O(1)** <br> 虽然next()有时候会是O(h),但是总体来说每个Node被visited了2次，一共call了N次|
 | 98 |  [Valid Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Java](./src/validBST.java) |1:recursively inorder traverse the tree into a list. T:O(n) S:O(n)<br> 2.iteratively inorder traverse the tree using a stack. T:O(n) S:O(n) <br> 3.recursively inorder traverse the tree using two boundary values: min, max T:O(n) S:O(1) <br>考虑integer overflow：long pre = Long.MIN_VALUE; |
+| 971 | [Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/)|[Java](./src/flipBinaryTree.java)|关于"flip"的理解：一开始preorder是中，左，右。flip就是中，右，左 |
 | |bfs dfs |  |top down, bottom up |
 | 623 | [Add One Row To Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Java](./src/add1Row.java) | 一道经典BFS的题，注意corner case |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Java](./src/deleteNodeInBST.java) |1. search for a node to remove <br> 2. If the node is found, delete the node <br>|
@@ -115,7 +116,7 @@ Readme 里面并没有列出所有的题目的解法，只列出一些比较经�
 | 975 | [Odd Even Jump](https://leetcode.com/problems/odd-even-jump/description/)| [Java](./src/oddEvenJump.java) | 1. DP ideal, 从后往头走 2. 学会多熟练运用treemap的ceilingEntry and floorEntry|
 | | **Union Find** | [并查集算法介绍](https://blog.csdn.net/dm_vincent/article/details/7655764)| |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/)| [Java](./src/numOfIsland.java)| 这种解法是用的quick union的方法，即使用parent-link |
-| 305 | [Number of Islands 2](https://leetcode.com/problems/number-of-islands-ii/)|Weighted Union Find. 相比于1，多了weighted步骤，即争取保持树的平衡性 |
+| 305 | [Number of Islands 2](https://leetcode.com/problems/number-of-islands-ii/)|[Java](./src/numOfIslandII.java)|Weighted Union Find. 相比于1，多了weighted步骤，即争取保持树的平衡性 |
 | | **Linked List** | | |
 | lc外 | Generate Linked List| [Java](./src/generateLinkedList.java)| 自己写的class用来快速构建linked list 1.generate 2. show|
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./src/reverseLinkedList.java) |经典题目 关键在于next指向previous node同时，不能丢掉后面linked list的头 <br> 1. iterative method 2. recursive method |
