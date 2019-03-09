@@ -114,6 +114,8 @@ Readme 里面并没有列出所有的题目的解法，只列出一些比较经�
 | 560 |[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) |[Java](./src/subArraySumk.java)| presum + hashmap (presum : frequency) <br> follow up: if all elements >= 0 (space O(1)). Two pointers |
 | 926 | [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/) | [Java](./src/flipToMono.java) | 养成手感了，挺有意思一道题|
 | 975 | [Odd Even Jump](https://leetcode.com/problems/odd-even-jump/description/)| [Java](./src/oddEvenJump.java) | 1. DP ideal, 从后往头走 2. 学会多熟练运用treemap的ceilingEntry and floorEntry|
+| 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/description/)| [Java](./src/burstBallons.java)| |
+| 1000 | [Minimum Cost To Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/description/)| [Java](burstBallons.java) | |
 | | **Union Find** | [并查集算法介绍](https://blog.csdn.net/dm_vincent/article/details/7655764)| |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/)| [Java](./src/numOfIsland.java)| 这种解法是用的quick union的方法，即使用parent-link |
 | 305 | [Number of Islands 2](https://leetcode.com/problems/number-of-islands-ii/)|[Java](./src/numOfIslandII.java)|Weighted Union Find. 相比于1，多了weighted步骤，即争取保持树的平衡性 |
